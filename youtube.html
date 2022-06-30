@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="icons/youtube-favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/video.css">
+</head>
+<body>
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+      <a href="https://youtube.com" target="_blank">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </a>
+    </div>
+
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">Youtube Apps</div>
+      </div>
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="tooltip">Notifications</div>
+        <div class="notifications-count">7</div>
+      </div>
+      <img class="current-user-picture" src="channel-pictures/nicolas-pic-yt.jpg">
+    </div>
+  </header>
+
+  <!-- ======================== NAV ======================== -->
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <!-- ======================== MAIN ======================== -->
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=KnZ8h3MRuYg" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-antidote.jpg">
+          </a>
+          <div class="video-time">4:43</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank">
+              <img class="profile-picture" src="channel-pictures/travis-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=KnZ8h3MRuYg" target="_blank">
+              <p class="video-title">Travi$ Scott - Antidote</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank">
+              <p class="video-author">Travis Scott &#9834;</p>
+            </a>
+            <p class="video-stats">402M views &#183; 6 years ago</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=JrVt10PTD8I" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-taylorgang.jpg">
+          </a>
+          <div class="video-time">5:36</div>
+        </div>
+        <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/channel/UCVp3nfGRxmMadNDuVbJSk8A" target="_blank">
+            <img class="profile-picture" src="channel-pictures/wiz-channel-pic.jpg">
+          </a>
+        </div>
+        <div class="video-info">
+          <a class="link-video" href="https://www.youtube.com/watch?v=JrVt10PTD8I" target="_blank">
+            <p class="video-title">Wiz Khalifa ft. Chevy Woods - Taylor Gang (official video)</p>
+          </a>
+          <a class="link-video" href="https://www.youtube.com/channel/UCVp3nfGRxmMadNDuVbJSk8A" target="_blank">
+            <p class="video-author">Wiz Khalifa &#9834;</p>
+          </a>
+          <p class="video-stats">18M views &#183; 11 years ago</p>
+        </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=_JZqoGz0b6o" target="_blank" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-newchoppa.jpg">
+          </a>
+          <div class="video-time">2:34</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UC652oRUvX1onwrrZ8ADJRPw" target="_blank">
+              <img class="profile-picture" src="channel-pictures/carti-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=_JZqoGz0b6o" target="_blank">
+              <p class="video-title">Playboi Carti - New Choppa ft. A$AP Rocky (Official Video)</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UC652oRUvX1onwrrZ8ADJRPw" target="_blank">
+              <p class="video-author">Playboi Carti &#9834;</p>
+            </a>
+            <p class="video-stats">29M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=KY44zvhWhp4" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-loveme.jpg">
+          </a>
+          <div class="video-time">4:25</div>
+        </div>
+        <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/channel/UCO9zJy7HWrIS3ojB4Lr7Yqw" target="_blank">
+            <img class="profile-picture" src="channel-pictures/lilwayne-channel-pic.jpg">
+          </a>
+        </div>
+        <div class="video-info">
+          <a class="link-video" href="https://www.youtube.com/watch?v=KY44zvhWhp4" target="_blank">
+            <p class="video-title">Lil Wayne - Love Me ft. Drake, Future (Explicit) (Official Music Video)</p>
+          </a>
+          <a class="link-video" href="https://www.youtube.com/channel/UCO9zJy7HWrIS3ojB4Lr7Yqw" target="_blank">
+            <p class="video-author">Lil Wayne &#9834;</p>
+          </a>
+          <p class="video-stats">439M views &#183; 9 years ago</p>
+        </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=L7_jYl8A73g" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-runaway.jpg">
+          </a>
+          <div class="video-time">8:29</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCs6eXM7s8Vl5WcECcRHc2qQ" target="_blank">
+              <img class="profile-picture" src="channel-pictures/kanye-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=L7_jYl8A73g" target="_blank">
+              <p class="video-title">Kanye West - Runaway (Extended Video Version) ft. Pusha T</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UCs6eXM7s8Vl5WcECcRHc2qQ" target="_blank">
+              <p class="video-author">Kanye West &#9834;</p>
+            </a>
+            <p class="video-stats">44M views &#183; 11 years ago</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=BuNBLjJzRoo" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-90210jpg.jpg">
+          </a>
+          <div class="video-time">5:06</div>
+        </div>
+        <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank">
+            <img class="profile-picture" src="channel-pictures/travis-channel-pic.jpg">
+          </a>
+        </div>
+        <div class="video-info">
+          <a class="link-video" href="https://www.youtube.com/watch?v=BuNBLjJzRoo" target="_blank">
+            <p class="video-title">Travi$ Scott - 90210 ft. Kacy Hill</p>
+          </a>
+          <a class="link-video" href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank">
+            <p class="video-author">Travis Scott &#9834;</p>
+          </a>
+          <p class="video-stats">57M views &#183; 5 years ago</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=BNzc6hG3yN4" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-asapforever.jpg">
+          </a>
+          <div class="video-time">4:01</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UC0KAFLxIiaR_FFNYDL3utGw" target="_blank">
+              <img class="profile-picture" src="channel-pictures/rocky-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=BNzc6hG3yN4" target="_blank">
+              <p class="video-title">A$AP Rocky - A$AP Forever (Official Video) ft. Moby</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UC0KAFLxIiaR_FFNYDL3utGw" target="_blank">
+              <p class="video-author">ASAPROCKYUPTOWN
+                &#9834;</p>
+            </a>
+            <p class="video-stats">81M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=UX6K7waag5Q" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-wedemboyz.jpg">
+          </a>
+          <div class="video-time">3:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCVp3nfGRxmMadNDuVbJSk8A" target="_blank">
+              <img class="profile-picture" src="channel-pictures/wiz-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=UX6K7waag5Q" target="_blank">
+              <p class="video-title">Wiz Khalifa - We Dem Boyz [Official Video]</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UCVp3nfGRxmMadNDuVbJSk8A" target="_blank">
+              <p class="video-author">Wiz Khalifa &#9834;</p>
+            </a>
+            <p class="video-stats">378M views &#183; 8 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=KHsEQmWSRTs" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-hellofanight.jpg">
+          </a>
+          <div class="video-time">5:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCdEs7HUfdydw41YVFV5TMSg" target="_blank">
+              <img class="profile-picture" src="channel-pictures/schoolboyq-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=KHsEQmWSRTs" target="_blank">
+              <p class="video-title">ScHoolboy Q - Hell Of A Night (Explicit)</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UCdEs7HUfdydw41YVFV5TMSg" target="_blank">
+              <p class="video-author">ScHoolboy Q &#9834;</p>
+            </a>
+            <p class="video-stats">22M views &#183; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=cZaJYDPY-YQ" target="_blank">
+            <img class="thumb" src="thumbs/idontfwu.jpg">
+          </a>
+          <div class="video-time">5:48</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/bigsean" target="_blank">
+              <img class="profile-picture" src="channel-pictures/bigsean-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=cZaJYDPY-YQ" target="_blank">
+              <p class="video-title">Big Sean - I Don't Fuck With You (Official Music Video) ft. E-40</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/c/bigsean" target="_blank">
+              <p class="video-author">Big Sean &#9834;</p>
+            </a>
+            <p class="video-stats">378M views &#183; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=iQhLccjeHYI" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-dontplay.jpg">
+          </a>
+          <div class="video-time">4:47</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank">
+              <img class="profile-picture" src="channel-pictures/travis-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=iQhLccjeHYI" target="_blank">
+              <p class="video-title">Travi$ Scott - Don't Play (Official Music Video) ft. Big Sean, The 1975</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank">
+              <p class="video-author">Travis Scott &#9834;</p>
+            </a>
+            <p class="video-stats">50M views &#183; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=dql1ew8r_vc" target="_blank">
+            <img class="thumb" src="thumbs/thumbnail-chapo.jpg">
+          </a>
+          <div class="video-time">3:11</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UC2rdCWnU8fmFxdgeYXkbbIw" target="_blank">
+              <img class="profile-picture" src="channel-pictures/berner-channel-pic.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a class="link-video" href="https://www.youtube.com/watch?v=dql1ew8r_vc" target="_blank">
+              <p class="video-title">Wiz Khalifa x Berner - "Chapo" (Official Music Video)</p>
+            </a>
+            <a class="link-video" href="https://www.youtube.com/channel/UC2rdCWnU8fmFxdgeYXkbbIw" target="_blank">
+              <p class="video-author">Berner415 &#9834;</p>
+            </a>
+            <p class="video-stats">46M views &#183; 8 years ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="signature">My<a class="github-link" href="https://github.com/moraes7" target="_blank">GitHub</a></div>
+  </footer>
+</body>
+</html>
